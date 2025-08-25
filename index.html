@@ -1,96 +1,167 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <link rel="icon" href="favicon.ico" type="image/x-icon">
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Atlas Mudanzas</title>
-    <h1>Empresa de Mudanzas en Badajoz y toda España</h1>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <link rel="icon" href="favicon.ico" type="image/x-icon" />
+  <title>Mudanzas en Badajoz, Cáceres y Elvas | Atlas Mudanzas</title>
+  <meta name="description" content="Atlas Mudanzas: empresa de mudanzas en Badajoz, Cáceres y Elvas. Mudanzas locales, nacionales e internacionales, embalaje profesional y transporte seguro. Pide presupuesto." />
+  <meta name="keywords" content="mudanzas Badajoz, mudanzas Cáceres, mudanças Elvas, empresa de mudanzas, embalaje, transporte de muebles" />
+  <meta name="author" content="Atlas Mudanzas" />
+  <link rel="canonical" href="https://atlasmudanzas.es/" />
+  <meta property="og:title" content="Atlas Mudanzas - Mudanzas en Badajoz, Cáceres y Elvas" />
+  <meta property="og:description" content="Mudanzas seguras y rápidas por toda España y Elvas. Embalaje profesional, transporte de muebles delicados y servicio local." />
+  <meta property="og:image" content="logo_atlas.webp" />
+  <meta property="og:url" content="https://atlasmudanzas.es/" />
+  <meta name="twitter:card" content="summary_large_image" />
 
-  <meta name="description" content="Atlas Mudanzas ofrece servicios profesionales de mudanzas locales y nacionales, embalaje y transporte seguro en toda España.">
-  <meta name="keywords" content="mudanzas, empresa de mudanzas, mudanzas locales, mudanzas nacionales, transporte de muebles, embalaje, Atlas Mudanzas">
-  <meta name="author" content="Atlas Mudanzas">
-  <link rel="canonical" href="https://www.atlasmudanzas.es/">
-  <meta property="og:title" content="Atlas Mudanzas - Profesionales del traslado">
-  <meta property="og:description" content="Mudanzas rápidas y seguras por toda España. Contacta con nosotros para una mudanza sin estrés.">
-  <meta property="og:image" content="logo_atlas.webp">
-  <meta property="og:url" content="https://www.atlasmudanzas.es/">
-  <meta name="twitter:card" content="summary_large_image">
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "MovingCompany",
-      "name": "Atlas Mudanzas",
-      "url": "https://atlasmudanzas.es",
-      "telephone": "+34 900 123 456",
-      "address": {
-        "@type": "PostalAddress",
-        "addressLocality": "Badajoz",
-        "addressCountry": "ES"
-      }
-    }
-</script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "MovingCompany",
+    "name": "Atlas Mudanzas",
+    "url": "https://atlasmudanzas.es",
+    "image": "https://atlasmudanzas.es/logo_atlas.webp",
+    "email": "alquilerymudanzasatlas@gmail.com",
+    "telephone": "+34 637 22 05 40",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Badajoz",
+      "addressCountry": "ES"
+    },
+    "areaServed": [
+      {"@type": "City", "name": "Badajoz"},
+      {"@type": "City", "name": "Cáceres"},
+      {"@type": "City", "name": "Elvas"}
+    ],
+    "openingHours": "Mo-Sa 09:00-20:00",
+    "sameAs": []
+  }
+  </script>
+
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
-    html {
-      scroll-behavior: smooth;
+    html { scroll-behavior: smooth; }
+    body::before{
+      content:""; position:fixed; inset:0; z-index:-1;
+      background: linear-gradient(rgba(0,0,0,.55), rgba(0,0,0,.55)), url('background.webp') center/cover no-repeat;
     }
-    body::before {
-      content: "";
-      position: fixed;
-      top: 0;
-      left: 0;
-      width: 100vw;
-      height: 100vh;
-      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('background.webp') center/cover no-repeat;
-      z-index: -1;
-    }
+    .container-narrow{max-width:72rem;margin-inline:auto}
   </style>
 </head>
 <body class="text-white bg-black">
-  <header class="h-screen flex flex-col justify-center items-center text-center p-8">
-    <img src="atlas_logo.webp" alt="Logo Atlas Mudanzas" class="w-64 mb-6 drop-shadow-md">
-    <p class="text-xl max-w-xl bg-black/60 p-4 rounded-xl">Mudanzas seguras y rápidas. Nos encargamos de todo para que tú no te preocupes por nada. </p>
-    <a href="#servicios" class="mt-8 px-6 py-3 bg-[#c3b200] text-black rounded-xl font-bold">Descubre nuestros servicios</a>
+
+  <!-- NAV -->
+  <nav class="fixed top-0 left-0 right-0 z-20 backdrop-blur bg-black/40 border-b border-[#c3b200]/30">
+    <div class="container-narrow flex items-center justify-between px-4 py-3">
+      <a href="#top" class="flex items-center gap-3">
+        <img src="atlas_logo.webp" alt="Atlas Mudanzas logo" class="w-10 h-10" />
+        <span class="font-bold tracking-wide">Atlas Mudanzas</span>
+      </a>
+      <div class="hidden md:flex gap-6 text-sm">
+        <a href="#servicios" class="hover:text-[#c3b200]">Servicios</a>
+        <a href="#badajoz" class="hover:text-[#c3b200]">Badajoz</a>
+        <a href="#caceres" class="hover:text-[#c3b200]">Cáceres</a>
+        <a href="#elvas" class="hover:text-[#c3b200]">Elvas</a>
+        <a href="#contacto" class="hover:text-[#c3b200]">Contacto</a>
+      </div>
+      <a href="#contacto" class="px-3 py-2 bg-[#c3b200] text-black rounded-xl font-semibold md:inline-block hidden">Pide presupuesto</a>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <header id="top" class="min-h-[90vh] flex flex-col justify-center items-center text-center px-6 pt-24">
+    <img src="atlas_logo.webp" alt="Atlas Mudanzas - empresa de mudanzas" class="w-40 md:w-56 mb-6 drop-shadow-md" />
+    <h1 class="text-3xl md:text-5xl font-extrabold text-[#c3b200] drop-shadow-lg mb-4">
+      Empresa de Mudanzas en Badajoz, Cáceres y Elvas
+    </h1>
+    <p class="text-lg md:text-xl max-w-2xl bg-black/60 p-4 rounded-xl">
+      Mudanzas seguras y rápidas. Nos encargamos de todo para que tú no te preocupes por nada.
+    </p>
+    <div class="mt-8 flex flex-wrap gap-3 justify-center">
+      <a href="#servicios" class="px-6 py-3 bg-[#c3b200] text-black rounded-xl font-bold hover:bg-yellow-400 transition">Descubre nuestros servicios</a>
+      <a href="#contacto" class="px-6 py-3 border border-[#c3b200] rounded-xl font-semibold hover:bg-[#c3b200]/10 transition">Contactar ahora</a>
+    </div>
   </header>
 
+  <!-- SERVICIOS -->
   <section id="servicios" class="py-20 px-6 text-center bg-[#1e1e1e]/90">
-    <h2 class="text-3xl font-semibold text-[#c3b200] mb-6">Nuestros Servicios</h2>
-    <div class="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
-      <div class="p-6 bg-black/80 rounded-2xl shadow-xl border border-[#c3b200]">
-        <h3 class="text-xl font-bold mb-2">Mudanzas locales</h3>
-        <p>Traslados dentro de tu ciudad, puntuales y eficientes.</p>
-      </div>
-      <div class="p-6 bg-black/80 rounded-2xl shadow-xl border border-[#c3b200]">
-        <h3 class="text-xl font-bold mb-2">Mudanzas nacionales e internacionales.</h3>
-        <p>Movemos tus pertenencias a cualquier punto con total seguridad.</p>
-      </div>
-      <div class="p-6 bg-black/80 rounded-2xl shadow-xl border border-[#c3b200]">
-        <h3 class="text-xl font-bold mb-2">Empaque y embalaje</h3>
-        <p>Nos encargamos de proteger tus objetos más delicados con materiales de calidad.</p>
+    <div class="container-narrow">
+      <h2 class="text-3xl font-semibold text-[#c3b200] mb-6">Nuestros Servicios</h2>
+      <p class="max-w-3xl mx-auto mb-10">
+        Realizamos mudanzas locales, nacionales e internacionales, con embalaje profesional y transporte seguro de enseres y muebles delicados.
+      </p>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div class="p-6 bg-black/80 rounded-2xl shadow-xl border border-[#c3b200]">
+          <h3 class="text-xl font-bold mb-2">Mudanzas locales</h3>
+          <p>Traslados dentro de tu ciudad con puntualidad, eficiencia y protección adecuada.</p>
+        </div>
+        <div class="p-6 bg-black/80 rounded-2xl shadow-xl border border-[#c3b200]">
+          <h3 class="text-xl font-bold mb-2">Mudanzas nacionales e internacionales</h3>
+          <p>Coordinación completa a cualquier punto de España y Portugal.</p>
+        </div>
+        <div class="p-6 bg-black/80 rounded-2xl shadow-xl border border-[#c3b200]">
+          <h3 class="text-xl font-bold mb-2">Embalaje profesional</h3>
+          <p>Protegemos tus objetos más delicados con materiales de calidad y técnicas seguras.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <!--<section id="testimonios" class="py-20 px-6 bg-black/90 text-center">
-    <h2 class="text-3xl font-semibold text-[#c3b200] mb-6">Testimonios</h2>
-    <div class="max-w-4xl mx-auto space-y-6">
-      <blockquote class="italic">“Servicio impecable, llegaron a tiempo y trataron mis cosas con mucho cuidado.”<br><span class="text-[#c3b200] font-bold">– Laura G.</span></blockquote>
-      <blockquote class="italic">“Me ayudaron incluso a desmontar los muebles. Muy recomendados.”<br><span class="text-[#c3b200] font-bold">– Marcos P.</span></blockquote>
+  <!-- BADAJOZ -->
+  <section id="badajoz" class="py-20 px-6 text-center bg-black/90">
+    <div class="container-narrow">
+      <h2 class="text-3xl font-bold text-[#c3b200] mb-6">Mudanzas en Badajoz</h2>
+      <p class="max-w-3xl mx-auto">
+        Especialistas en mudanzas en Badajoz y provincia. Viviendas, oficinas y traslados especiales
+        con embalaje y montaje/desmontaje cuando lo necesitas.
+      </p>
     </div>
-  </section>-->
+  </section>
 
-  <section id="contacto" class="py-20 px-6 bg-[#1e1e1e]/90 text-center">
-    <h2 class="text-3xl font-semibold text-[#c3b200] mb-6">Contacto</h2>
-    <p class="mb-4">Puedes llamarnos al <span class="font-bold">637-22-05-40</span> o escribirnos a <span class="font-bold">alquilerymudanzasatlas@gmail.com</span></p>
-    <!--<p class="text-sm text-gray-400">Dirección: Calle Falsa 123, Ciudad Inventada</p>-->
+  <!-- CÁCERES -->
+  <section id="caceres" class="py-20 px-6 text-center bg-[#1e1e1e]/90">
+    <div class="container-narrow">
+      <h2 class="text-3xl font-bold text-[#c3b200] mb-6">Mudanzas en Cáceres</h2>
+      <p class="max-w-3xl mx-auto">
+        Servicio rápido y profesional en Cáceres: mudanzas locales y nacionales con
+        protección de muebles delicados y transporte asegurado.
+      </p>
+    </div>
+  </section>
+
+  <!-- ELVAS -->
+  <section id="elvas" class="py-20 px-6 text-center bg-black/90">
+    <div class="container-narrow">
+      <h2 class="text-3xl font-bold text-[#c3b200] mb-6">Mudanças em Elvas</h2>
+      <p class="max-w-3xl mx-auto">
+        Trabalhamos em Elvas (Portugal) com mudanças seguras para casas e empresas,
+        incluindo embalagem profissional e coordenação transfronteiriça.
+      </p>
+    </div>
+  </section>
+
+  <!-- CONTACTO -->
+  <section id="contacto" class="py-20 px-6 text-center bg-[#1e1e1e]/90">
+    <div class="container-narrow">
+      <h2 class="text-3xl font-semibold text-[#c3b200] mb-6">Contacto</h2>
+      <p class="mb-4">
+        Llámanos al <span class="font-bold">637 22 05 40</span> o escríbenos a
+        <a href="mailto:alquilerymudanzasatlas@gmail.com" class="underline">alquilerymudanzasatlas@gmail.com</a>
+      </p>
+      <div class="flex justify-center">
+        <a href="tel:+34637220540" class="mt-4 px-6 py-3 bg-[#c3b200] text-black rounded-xl font-bold hover:bg-yellow-400 transition">Llamar ahora</a>
+      </div>
+    </div>
   </section>
 
   <footer class="py-6 bg-black/90 text-center text-sm text-gray-300">
-    <a href="legal.html" class="underline text-gray-400 hover:text-white">Aviso legal y privacidad</a>
-    &copy; 2025 Atlas Mudanzas. Todos los derechos reservados.
+    <div class="container-narrow">
+      <a href="legal.html" class="underline text-gray-400 hover:text-white">Aviso legal y privacidad</a>
+      <span class="mx-2">•</span>
+      <span>&copy; 2025 Atlas Mudanzas. Todos los derechos reservados.</span>
+    </div>
   </footer>
-
 
 </body>
 </html>
